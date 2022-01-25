@@ -1,0 +1,87 @@
+Python - Escape Characters
+
+❮ Previous
+Next ❯
+
+
+Escape Character
+To insert characters that are illegal in a string, use an escape character.
+An escape character is a backslash \ followed by the character you want to insert.
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+
+Example
+You will get an error if you use double quotes inside a string that is 
+surrounded by double quotes:
+
+txt = "We are the so-called "Vikings" from the north."
+
+Try it Yourself »
+
+To fix this problem, use the escape character \":
+
+Example
+The escape character allows you to use double quotes when you normally would not be allowed:
+
+txt = "We are the so-called \"Vikings\" from the north."
+
+Try it Yourself »
+
+
+Escape Characters
+Other escape characters used in Python:
+
+
+Code
+Result
+Try it
+
+
+\'
+Single Quote
+Try it »
+
+
+\\
+Backslash
+Try it »
+
+
+\n
+New Line
+Try it »
+
+
+\r
+Carriage Return
+Try it »
+
+
+\t
+Tab
+Try it »
+
+
+\b
+Backspace
+Try it »
+
+
+\f
+Form Feed
+
+
+
+\ooo
+Octal value
+Try it »
+
+
+\xhh
+Hex value
+Try it »
+
+
+
+
+❮ Previous
+Next ❯

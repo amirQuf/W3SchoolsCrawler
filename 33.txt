@@ -1,0 +1,250 @@
+JavaScript Tutorial
+
+❮ Home
+Next ❯
+
+
+JavaScript is the world's most popular programming language.
+JavaScript is the programming language of the Web.
+JavaScript is easy to learn.
+This tutorial will teach you JavaScript from basic to advanced.
+Start learning JavaScript now »
+
+Examples in Each Chapter
+With our "Try it Yourself" editor, you can edit the source code and view 
+the result.
+
+Example
+
+My First JavaScript
+
+Click me to display Date and Time
+
+
+
+Try it Yourself »
+
+
+
+Use the Menu
+We recommend reading this tutorial, in the sequence listed in the menu.
+If you have a large screen, the menu will always be present on the left.
+If you have a small screen, open the menu by clicking the top menu sign ☰.
+
+Learn by Examples
+Examples are better than 1000 words. Examples are often easier to understand 
+than text explanations.
+This tutorial supplements all explanations with clarifying "Try it Yourself" examples.
+
+If you try all the examples, you will learn a lot about JavaScript, in a very short time!
+JavaScript Examples »
+
+
+Why Study JavaScript?
+JavaScript is one of the 3 languages all web developers 
+must 
+learn:
+   1. HTML to define the content of web pages
+   2. CSS to specify the layout of web pages
+   3. JavaScript to program the behavior of web pages 
+
+This tutorial covers every version of JavaScript:
+
+The Original JavaScript ES1 ES2 ES3 (1997-1999)
+The First Main Revision ES5 (2009)
+The Second Revision ES6 (2015)
+The Yearly Additions (2016, 2017, 2018)
+
+
+
+
+
+
+
+
+
+Learning Speed
+In this tutorial, the learning speed is your choice.
+Everything is up to you.
+If you are struggling, take a break, or re-read the material.
+Always make sure you understand all the "Try-it-Yourself" 
+examples.
+The only way to become a clever programmer is to:
+Practice. Practice. Practice. Code. Code. Code !
+
+
+Test Yourself With Exercises
+
+Exercise:
+Create a variable called carName and assign the value Volvo to it.
+
+
+var  = "";
+
+
+
+Submit Answer »
+Start the Exercise
+
+
+
+Commonly Asked Questions
+
+How do I get JavaScript?
+Where can I download JavaScript?
+Is JavaScript Free?
+
+
+You don't have to get or download JavaScript.
+JavaScript is already running in your browser on your computer,
+on your tablet, and on your smart-phone.
+JavaScript is free to use for everyone.
+
+
+JavaScript References
+W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+The reference contains examples for all properties, methods and events, and 
+is continuously updated according to the latest web standards.
+Complete JavaScript Reference »
+
+JavaScript Quiz Test
+Test your JavaScript skills at W3Schools!
+Start JavaScript Quiz!
+
+
+  
+
+#w3_cert_badge {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -20%;
+}
+
+#w3_cert_arrow {
+  position: absolute;
+  right: 220px;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: 0;
+  z-index: 1;
+}
+
+#getdiploma {
+  position: relative;
+  padding: 0 60px 50px 60px;
+  margin-bottom: 125px;
+  border-radius: 16px;
+  background-color: #282A35;
+  color: #FFC0C7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma h2 {
+  font-size:50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma p {
+  font-size: 42px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  mxargin-top: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 1442px) {
+  #w3_cert_arrow {
+    right: 212px;
+    bottom: -15px;
+  }
+}
+
+
+@media screen and (max-width: 1202px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #w3_cert_arrow {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+  #getdiploma h2 {
+    font-size: 44px;
+  }
+  #getdiploma p {
+    font-size: 30px;
+  }
+
+  #getdiploma a {
+    width: 100%;
+  }
+  #w3_cert_badge {
+    top: -16px;
+    right: -8px;
+    width: 100px;
+  }
+  #getdiploma  {
+    margin-bottom: 55px;
+  }
+}
+
+
+Kickstart your career
+Get certified by completing the  course
+
+var foldername;
+function getCourseFolder() {
+  var pathname = window.location.pathname;
+  if (pathname.substr(0,1) == "/") {pathname = pathname.substr(1);}
+  pos = pathname.indexOf("/");
+  foldername = pathname.substr(0, pos);
+  foldername = foldername.toUpperCase();
+  if (foldername == "JS") foldername = "JavaScript";
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") foldername = "";
+  if (foldername == "CS") foldername = "C#";
+  if (foldername == "CYBERSECURITY") foldername = "Cyber Security";  
+  if (foldername == "CPP") foldername = "C++";
+  document.getElementById("coursetopic").innerText = foldername;
+}
+getCourseFolder();
+
+Get certified
+
+
+
+
+.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}w3schools CERTIFIED  .  2022
+
+
+
+❮ Home
+Next ❯

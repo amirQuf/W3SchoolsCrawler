@@ -1,0 +1,252 @@
+Python Data Types
+
+❮ Previous
+Next ❯
+
+
+Built-in Data Types
+In programming, data type is an important concept.
+Variables can store data of different types, and different types can do 
+different things.
+Python has the following data types built-in by default, in these categories:
+
+
+Text Type:
+str
+
+
+Numeric Types:
+int, float,
+    complex
+
+
+Sequence Types:
+list, tuple, 
+    range
+
+
+Mapping Type:
+dict
+
+
+Set Types:
+set, frozenset
+
+
+Boolean Type:
+bool
+
+
+Binary Types:
+bytes, bytearray, 
+    memoryview
+
+
+
+Getting the Data Type
+You can get the data type of any object by using the type() function:
+
+Example
+Print the data type of the variable x:
+
+x = 5
+print(type(x))
+
+Try it Yourself »
+
+
+Setting the Data Type
+In Python, the data type is set when you assign a value to a variable:
+
+#dtref td:nth-child(1) {
+  font-family: Consolas,"courier new";
+  font-size: 110%;
+}
+
+
+
+Example
+Data Type
+Try it
+
+
+x = "Hello World"
+str
+Try it »
+
+
+x = 20
+int
+Try it »
+
+
+x = 20.5
+float
+Try it »
+
+
+x = 1j
+complex
+Try it »
+
+
+x = ["apple", "banana", "cherry"]
+list
+Try it »
+
+
+x = ("apple", "banana", "cherry")
+tuple
+Try it »
+
+
+x = range(6)
+range
+Try it »
+
+
+x = {"name" : "John", "age" : 36}
+dict
+Try it »
+
+
+x = {"apple", "banana", "cherry"}
+set
+Try it »
+
+
+x = frozenset({"apple", "banana", "cherry"})
+frozenset
+Try it »
+
+
+x = True
+bool
+Try it »
+
+
+x = b"Hello"
+bytes
+Try it »
+
+
+x = bytearray(5)
+bytearray
+Try it »
+
+
+x = memoryview(bytes(5))
+memoryview
+Try it »
+
+
+
+
+
+
+
+
+
+Setting the Specific Data Type
+If you want to specify the data type, you can use the following 
+constructor functions:
+
+
+Example
+Data Type
+Try it
+
+
+x = str("Hello World")
+str
+Try it »
+
+
+x = int(20)
+int
+Try it »
+
+
+x = float(20.5)
+float
+Try it »
+
+
+x = complex(1j)
+complex
+Try it »
+
+
+x = list(("apple", "banana", "cherry"))
+list
+Try it »
+
+
+x = tuple(("apple", "banana", "cherry"))
+tuple
+Try it »
+
+
+x = range(6)
+range
+Try it »
+
+
+x = dict(name="John", age=36)
+dict
+Try it »
+
+
+x = set(("apple", "banana", "cherry"))
+set
+Try it »
+
+
+x = frozenset(("apple", "banana", "cherry"))
+frozenset
+Try it »
+
+
+x = bool(5)
+bool
+Try it »
+
+
+x = bytes(5)
+bytes
+Try it »
+
+
+x = bytearray(5)
+bytearray
+Try it »
+
+
+x = memoryview(bytes(5))
+memoryview
+Try it »
+
+
+
+
+
+Test Yourself With Exercises
+
+Exercise:
+The following code example would print the data type of x, what data type would that be?
+
+
+x = 5
+print(type(x))
+
+
+
+
+Submit Answer »
+Start the Exercise
+
+
+
+
+❮ Previous
+Next ❯

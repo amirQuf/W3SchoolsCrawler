@@ -1,0 +1,136 @@
+HTML HEX Colors
+
+❮ Previous
+Next ❯
+
+
+A hexadecimal color is specified with: #RRGGBB, where the RR 
+(red), GG (green) and BB (blue) hexadecimal integers specify the components of 
+the color.
+
+HEX Color Values
+In HTML, a color can be specified using a hexadecimal value in 
+the form:
+#rrggbb
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other 
+two (green and blue) are set to 00.
+Another example, #00ff00 is displayed as green, 
+because green is set to its highest value (ff), and the other two (red and blue) are 
+set to 00.
+To display black, set all color parameters to 00, like this: #000000.
+To display white, set all color parameters to ff, like 
+this: #ffffff. 
+Experiment by mixing the HEX values below:
+
+
+
+
+
+ 
+
+
+
+
+
+
+RED
+
+ff
+
+
+GREEN
+
+0
+
+
+BLUE
+
+0
+
+
+
+
+Example
+
+
+
+#ff0000
+
+
+#0000ff
+
+
+#3cb371
+
+
+#ee82ee
+
+
+#ffa500
+
+
+#6a5acd
+
+
+
+
+Try it Yourself »
+
+
+Shades of Gray
+Shades of gray are often defined using equal values for all three parameters:
+
+Example
+
+
+
+#404040
+
+
+#686868
+
+
+#a0a0a0
+
+
+#bebebe
+
+
+#dcdcdc
+
+
+#f8f8f8
+
+
+
+
+Try it Yourself »
+
+
+//changeRed(255)
+//changeGreen(0)
+//changeBlue(0)
+changeHex("r");
+function changeHex(x) {
+  var col, r, g, b;
+  r = document.getElementById("slideRedHex").value;
+  g = document.getElementById("slideGreenHex").value;
+  b = document.getElementById("slideBlueHex").value;
+  col = w3color("rgb(" + r + "," + g + "," + b + ")");
+    document.getElementById('valRed2Hex').innerHTML = col.toHexString().substr(1,2);
+    document.getElementById('valGreen2Hex').innerHTML = col.toHexString().substr(3,2);
+    document.getElementById('valBlue2Hex').innerHTML = col.toHexString().substr(5,2);
+    document.getElementById('hexresult').style.backgroundColor = col.toRgbString();
+    document.getElementById('hexresulttext').innerHTML = col.toHexString();
+  if (col.isDark(150)) {
+    document.getElementById('hexresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('hexresulttext').style.color = "#1f2d3d";
+  }
+}
+
+
+
+❮ Previous
+Next ❯

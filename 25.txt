@@ -1,0 +1,109 @@
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });
+
+
+HTML Background Images
+
+❮ Previous
+Next ❯
+
+
+A background image can be specified for almost any HTML element.
+
+Background Image on a HTML element
+To add a background image on an HTML element, use the HTML style attribute 
+and the CSS background-image property:
+
+Example
+Add a background image on a HTML element:
+
+  <div style="background-image: url('img_girl.jpg');">
+Try it Yourself »
+
+You can also specify the background image in the <style> 
+element, in the <head> 
+section:
+
+Example
+Specify the background image in the <style> 
+  element:
+
+  <style>div {  background-image: url('img_girl.jpg');
+  }</style>
+Try it Yourself »
+
+
+Background Image on a Page
+If you want the entire page to have a background image, you must 
+specify the background image on the <body> element:
+
+Example
+Add a background image for the entire page:
+
+  <style>body {  background-image: url('img_girl.jpg');
+  }</style>
+Try it Yourself »
+
+
+Background Repeat
+If the background image is smaller than the element, the image will repeat itself, 
+horizontally and vertically, until it reaches the end of the element:
+
+
+
+Example
+
+  <style>body {  background-image: url('example_img_girl.jpg');}</style>
+Try it Yourself »
+
+To avoid the background image from repeating itself, set the background-repeat property 
+to no-repeat.
+
+Example
+
+  <style>body {  background-image: url('example_img_girl.jpg');  
+  background-repeat: no-repeat;}</style>
+Try it Yourself »
+
+
+Background Cover
+If you want the background image to cover the entire element, you 
+can set the background-size property to
+cover.
+Also, to make sure the entire element is always covered, set the 
+background-attachment property to fixed:
+This way, the background image will cover the entire element, with no stretching (the image will 
+keep its original proportions):
+
+Example
+
+  <style>body {  background-image: url('img_girl.jpg');  
+  background-repeat: no-repeat;  background-attachment: fixed;   
+  background-size: cover;
+  }</style>
+Try it Yourself »
+
+
+Background Stretch
+If you want the background image to stretch to fit the entire element, you 
+can set the background-size property to
+100% 100%: 
+
+
+Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.
+
+Example
+
+  <style>body {  background-image: url('img_girl.jpg');  
+  background-repeat: no-repeat;  background-attachment: fixed;   
+  background-size: 100% 100%;
+  }</style>
+Try it Yourself »
+
+
+Learn More CSS
+From the examples above you have learned that background images can be styled by using the CSS background properties.
+To learn more about CSS background properties, study our CSS Background Tutorial.
+
+
+❮ Previous
+Next ❯

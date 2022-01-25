@@ -1,0 +1,289 @@
+HTML HSL and HSLA Colors
+
+❮ Previous
+Next ❯
+
+
+HSL stands for hue, saturation, and lightness.
+HSLA color values are an extension of HSL with an Alpha channel 
+(opacity).
+
+HSL Color Values
+In HTML, a color can be specified using hue, saturation, and lightness (HSL) in 
+the form:
+hsl(hue, saturation, lightness)
+Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+Lightness is also a percentage value, 0% is black, and 100% is white.
+Experiment by mixing the HSL values below:
+
+
+
+
+
+ 
+
+
+
+
+
+
+HUE
+
+0
+
+
+SATURATION
+
+100%
+
+
+LIGHTNESS
+
+50%
+
+
+
+
+Example
+
+
+
+hsl(0, 100%, 50%)
+
+
+hsl(240, 100%, 50%)
+
+
+hsl(147, 50%, 47%)
+
+
+hsl(300, 76%, 72%)
+
+
+hsl(39, 100%, 50%)
+
+
+hsl(248, 53%, 58%)
+
+
+
+
+Try it Yourself »
+
+
+Saturation
+Saturation can be described as the intensity of a color.
+100% is pure color, no shades of gray
+50% is 50% gray, but you can still see the color.
+0% is completely gray, you can no longer see the color.
+
+Example
+
+
+
+hsl(0, 100%, 50%)
+
+
+hsl(0, 80%, 50%)
+
+
+hsl(0, 60%, 50%)
+
+
+hsl(0, 40%, 50%)
+
+
+hsl(0, 20%, 50%)
+
+
+hsl(0, 0%, 50%)
+
+
+
+
+Try it Yourself »
+
+
+Lightness
+The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).
+
+Example
+
+
+
+hsl(0, 100%, 0%)
+
+
+hsl(0, 100%, 25%)
+
+
+hsl(0, 100%, 50%)
+
+
+hsl(0, 100%, 75%)
+
+
+hsl(0, 100%, 90%)
+
+
+hsl(0, 100%, 100%)
+
+
+
+
+Try it Yourself »
+
+
+Shades of Gray
+Shades of gray are often defined by setting the hue and saturation to 0, and 
+adjust the lightness from 0% to 100% to get darker/lighter shades:
+
+Example
+
+
+
+hsl(0, 0%, 20%)
+
+
+hsl(0, 0%, 30%)
+
+
+hsl(0, 0%, 40%)
+
+
+hsl(0, 0%, 60%)
+
+
+hsl(0, 0%, 70%)
+
+
+hsl(0, 0%, 90%)
+
+
+
+
+Try it Yourself »
+
+
+HSLA Color Values
+HSLA color values are an extension of HSL color values with an Alpha channel 
+- which specifies the opacity for a color.
+An HSLA color value is 
+specified with:
+hsla(hue, saturation, lightness, 
+alpha)
+The alpha parameter is a number 
+between 0.0 (fully transparent) and 1.0 (not transparent at all):
+Experiment by mixing the HSLA values below:
+
+
+
+
+
+ 
+
+
+
+
+
+
+HUE
+
+0
+
+
+SATURATION
+
+100%
+
+
+LIGHTNESS
+
+50%
+
+
+ALPHA
+
+0.5
+
+
+
+
+Example
+
+
+
+hsla(9, 100%, 64%, 0)
+
+
+hsla(9, 100%, 64%, 0.2)
+
+
+hsla(9, 100%, 64%, 0.4)
+
+
+hsla(9, 100%, 64%, 0.6)
+
+
+hsla(9, 100%, 64%, 0.8)
+
+
+hsla(9, 100%, 64%, 1)
+
+
+
+
+Try it Yourself »
+
+
+//changeRed(255)
+//changeGreen(0)
+//changeBlue(0)
+
+
+changeHsl("h");
+function changeHsl(x) {
+  var col, h, s, l;
+  h = document.getElementById("slideHue").value;
+  s = document.getElementById("slideSat").value;
+  l = document.getElementById("slideLight").value;
+  col = w3color("hsl(" + h + "," + s/100 + "," + l/100 + ")");
+    document.getElementById('valHue').innerHTML = col.toHsl().h;
+    document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+    document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+    document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+    document.getElementById('hslresulttext').innerHTML = col.toHslString();
+  if (col.isDark(150)) {
+    document.getElementById('hslresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('hslresulttext').style.color = "#1f2d3d";
+  }
+}
+
+changeHsla("h");
+function changeHsla(x) {
+  var col, h, s, l, a;
+  h = document.getElementById("slideHueA").value;
+  s = document.getElementById("slideSatA").value;
+  l = document.getElementById("slideLightA").value;
+  a = document.getElementById("slideHslAlpha").value/10;
+  col = w3color("hsla(" + h + "," + s/100 + "," + l/100 + "," + a + ")");
+  document.getElementById('valHueA').innerHTML = col.toHsl().h;
+  document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+  document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+  document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+  document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+  document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+  if (col.isDark(150) && a > 0.2) {
+    document.getElementById('hslaresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+  }
+}
+
+
+
+
+❮ Previous
+Next ❯

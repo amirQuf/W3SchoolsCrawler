@@ -1,0 +1,236 @@
+HTML RGB and RGBA Colors
+
+❮ Previous
+Next ❯
+
+
+An RGB color value represents RED, GREEN, and BLUE light 
+sources.
+An RGBA color value is an extension of RGB with an 
+Alpha channel (opacity).
+
+RGB Color Values
+In HTML, a color can be specified as an RGB value, using this formula:
+rgb(red, green, blue)
+Each parameter (red, green, and 
+blue) defines the intensity of the color with a value between 0 and 255.
+This means that there are 256 x 256 x 256 = 16777216 possible colors!
+For example, rgb(255, 0, 0) is displayed as red, 
+because red is set to its highest value (255), and the other two (green and blue) are 
+set to 0.
+Another example, rgb(0, 255, 0) is displayed as green, 
+because green is set to its highest value (255), and the other two (red and blue) are 
+set to 0.
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+To display white, set all color parameters to 255, like 
+this: rgb(255, 255, 255). 
+Experiment by mixing the RGB values below:
+
+
+
+
+
+ 
+
+
+
+
+
+
+RED
+
+255
+
+
+GREEN
+
+0
+
+
+BLUE
+
+0
+
+
+
+
+Example
+
+
+
+rgb(255, 0, 0)
+
+
+rgb(0, 0, 255)
+
+
+rgb(60, 179, 113)
+
+
+rgb(238, 130, 238)
+
+
+rgb(255, 165, 0)
+
+
+rgb(106, 90, 205)
+
+
+
+
+Try it Yourself »
+
+
+Shades of Gray
+Shades of gray are often defined using equal values for all three parameters:
+
+Example
+
+
+
+rgb(60, 60, 60)
+
+
+rgb(100, 100, 100)
+
+
+rgb(140, 140, 140)
+
+
+rgb(180, 180, 180)
+
+
+rgb(200, 200, 200)
+
+
+rgb(240, 240, 240)
+
+
+
+
+Try it Yourself »
+
+
+RGBA Color Values
+RGBA color values are an extension of RGB color values with an Alpha channel 
+- which specifies the opacity for a color.
+An RGBA color value is 
+specified with:
+rgba(red, green, blue, 
+alpha)
+The alpha parameter is a number 
+between 0.0 (fully transparent) and 1.0 (not transparent at all):
+Experiment by mixing the RGBA values below:
+
+
+
+
+
+ 
+
+
+
+
+
+
+RED
+
+255
+
+
+GREEN
+
+0
+
+
+BLUE
+
+0
+
+
+ALPHA
+
+0
+
+
+
+
+Example
+
+
+
+rgba(255, 99, 71, 0)
+
+
+rgba(255, 99, 71, 0.2)
+
+
+rgba(255, 99, 71, 0.4)
+
+
+rgba(255, 99, 71, 0.6)
+
+
+rgba(255, 99, 71, 0.8)
+
+
+rgba(255, 99, 71, 1)
+
+
+
+
+Try it Yourself »
+
+
+//changeRed(255)
+//changeGreen(0)
+//changeBlue(0)
+changeRGB("r");
+function changeRGB(x) {
+  var col, r, g, b;
+  r = document.getElementById("slideRed").value;
+  g = document.getElementById("slideGreen").value;
+  b = document.getElementById("slideBlue").value;
+  col = w3color("rgb(" + r + "," + g + "," + b + ")");
+  document.getElementById('valRed2').innerHTML = r;
+  document.getElementById('valGreen2').innerHTML = g;
+  document.getElementById('valBlue2').innerHTML = b;
+  document.getElementById('rgbresult').style.backgroundColor = col.toRgbString();
+  document.getElementById('rgbresulttext').innerHTML = col.toRgbString();
+  if (col.isDark(150)) {
+    document.getElementById('rgbresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('rgbresulttext').style.color = "#1f2d3d";
+  }
+}
+//function changeGreen(value) {
+//    document.getElementById('valGreen').innerHTML = value;
+//}
+//function changeBlue(value) {
+//    document.getElementById('valBlue').innerHTML = value;
+//}
+changeRGBA("r");
+function changeRGBA(x) {
+  var col, r, g, b, a;
+  r = document.getElementById("slideRedA").value;
+  g = document.getElementById("slideGreenA").value;
+  b = document.getElementById("slideBlueA").value;
+  a = document.getElementById("slideAlphaA").value/10;
+  col = w3color("rgba(" + r + "," + g + "," + b + "," + a + ")");
+  document.getElementById('valRed2A').innerHTML = r;
+  document.getElementById('valGreen2A').innerHTML = g;
+  document.getElementById('valBlue2A').innerHTML = b;
+  document.getElementById('valAlpha2A').innerHTML = a;
+  document.getElementById('rgbaresult').style.backgroundColor = col.toRgbaString();
+  document.getElementById('rgbaresulttext').innerHTML = col.toRgbaString();
+  if (col.isDark(150) && a > 0.2) {
+    document.getElementById('rgbaresulttext').style.color = "#ffffff";
+  } else {
+    document.getElementById('rgbaresulttext').style.color = "#1f2d3d";
+  }
+}
+
+
+
+❮ Previous
+Next ❯

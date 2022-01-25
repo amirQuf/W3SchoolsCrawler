@@ -1,0 +1,236 @@
+HTML Table Borders
+
+❮ Previous
+Next ❯
+
+
+HTML tables can have borders of different styles and shapes.
+
+
+How To Add a Border
+When you add a border to a table, you also add borders around each table cell:
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+To add a border, use the CSS border property on 
+table, th, and 
+td elements:
+
+Example
+
+table, th, td
+{
+  border: 1px solid black;
+}
+Try it Yourself »
+
+
+Collapsed Table Borders
+To avoid having double borders like in the example above, set the CSS border-collapse 
+property to collapse.
+This will make the borders collapse into a single border:
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+Example
+
+ table, th, td {  border: 1px solid black;
+   
+ border-collapse: collapse;}
+Try it Yourself »
+
+
+
+
+
+
+
+
+Style Table Borders
+If you set a background color of each cell,
+and give the border a white color (the same as the document background),
+you get the impression of an invisible border:
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+Example
+
+ table, th, td {  border: 1px solid white;
+   
+ border-collapse: collapse;}th, td {  background-color: #96D4D4;
+  }
+Try it Yourself »
+
+
+Round Table Borders
+With the border-radius property, the borders get rounded corners:
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+Example
+
+ table, th, td {  border: 1px solid 
+  black;
+   
+ border-radius: 10px;}
+Try it Yourself »
+
+
+Skip the border around the table by leaving out table from the css selector:
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+Example
+
+ th, td {  border: 1px solid 
+  black;
+   
+ border-radius: 10px;}
+Try it Yourself »
+
+
+Dotted Table Borders
+With the border-style property, you can set the appereance of the border.
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+The following values are allowed:
+
+dotted     
+dashed     
+solid     
+double     
+groove      
+ridge      
+inset      
+outset      
+none     
+hidden     
+
+
+Example
+
+  th, td { 
+ border-style: dotted;}
+Try it Yourself »
+
+
+Border Color
+With the border-color property, you can set the color of the border.
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+Example
+
+  th, td { 
+ border-color: #96D4D4;}
+Try it Yourself »
+
+
+
+
+❮ Previous
+Next ❯

@@ -1,0 +1,72 @@
+HTML Links - Create Bookmarks
+
+❮ Previous
+Next ❯
+
+
+HTML links can be used to create bookmarks, so that readers can 
+jump to specific parts of a web page.
+
+Create a Bookmark in HTML
+Bookmarks can be useful if a web page is very long.
+To create a bookmark - first create the bookmark, then add a link 
+to it.
+When the link is clicked, the page will scroll down or up to the location with the 
+bookmark.
+Example
+First, use the id attribute to create a 
+bookmark:
+
+
+<h2 id="C4">Chapter 4</h2>
+
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+Example
+
+ <a href="#C4">Jump to Chapter 4</a>
+
+Try it Yourself »
+
+You can also add a link to a bookmark on another page:
+
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+
+Chapter Summary
+
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+
+HTML Exercises
+
+Test Yourself With Exercises
+
+Exercise:
+Use the correct HTML to make the text below into a link to "default.html".
+
+ >Visit our HTML tutorial.
+
+
+Submit Answer »
+Start the Exercise
+
+
+
+HTML Link Tags
+
+
+Tag
+Description
+<a>Defines a hyperlink
+
+
+For a complete list of all available HTML tags, visit our HTML Tag Reference.
+
+
+
+❮ Previous
+Next ❯

@@ -1,0 +1,222 @@
+Python Tutorial
+
+❮ Home
+Next ❯
+
+
+Learn Python
+Python is a popular programming language.
+Python can be used on a server to create web applications.
+Start learning Python now »
+
+
+Learning by Examples
+With our "Try it Yourself" editor, you can edit Python code and view the result.
+
+Example
+
+print("Hello, World!")
+
+Try it Yourself »
+
+Click on the "Try it Yourself" button to see how it works.
+
+Python File Handling
+In our File Handling section you will learn how to open, read, write, and 
+delete files.
+Python File Handling
+
+Python Database Handling
+In our database section you will learn how to access and work with MySQL and MongoDB databases:
+Python MySQL Tutorial
+Python MongoDB Tutorial
+
+Python Exercises
+
+Test Yourself With Exercises
+
+Exercise:
+Insert the missing part of the code below to output "Hello World".
+
+
+("Hello World")
+
+
+
+Submit Answer »
+Start the Exercise
+
+
+
+
+
+
+
+
+
+Python Examples
+Learn by examples! This tutorial supplements all explanations with clarifying examples.
+See All Python Examples
+
+Python Quiz
+Test your Python skills with a quiz.
+Python Quiz
+
+Python Reference
+You will also find complete function and method references:
+Reference Overview
+Built-in Functions
+String Methods
+List/Array Methods
+Dictionary Methods
+Tuple Methods
+Set Methods
+File Methods
+Python Keywords
+Python Exceptions
+Python Glossary
+Random Module
+Requests Module
+Math Module
+CMath Module
+
+Download Python
+Download Python from the official Python web site:
+  https://python.org
+
+
+  
+
+#w3_cert_badge {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -20%;
+}
+
+#w3_cert_arrow {
+  position: absolute;
+  right: 220px;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: 0;
+  z-index: 1;
+}
+
+#getdiploma {
+  position: relative;
+  padding: 0 60px 50px 60px;
+  margin-bottom: 125px;
+  border-radius: 16px;
+  background-color: #282A35;
+  color: #FFC0C7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma h2 {
+  font-size:50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma p {
+  font-size: 42px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  mxargin-top: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 1442px) {
+  #w3_cert_arrow {
+    right: 212px;
+    bottom: -15px;
+  }
+}
+
+
+@media screen and (max-width: 1202px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #w3_cert_arrow {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+  #getdiploma h2 {
+    font-size: 44px;
+  }
+  #getdiploma p {
+    font-size: 30px;
+  }
+
+  #getdiploma a {
+    width: 100%;
+  }
+  #w3_cert_badge {
+    top: -16px;
+    right: -8px;
+    width: 100px;
+  }
+  #getdiploma  {
+    margin-bottom: 55px;
+  }
+}
+
+
+Kickstart your career
+Get certified by completing the  course
+
+var foldername;
+function getCourseFolder() {
+  var pathname = window.location.pathname;
+  if (pathname.substr(0,1) == "/") {pathname = pathname.substr(1);}
+  pos = pathname.indexOf("/");
+  foldername = pathname.substr(0, pos);
+  foldername = foldername.toUpperCase();
+  if (foldername == "JS") foldername = "JavaScript";
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") foldername = "";
+  if (foldername == "CS") foldername = "C#";
+  if (foldername == "CYBERSECURITY") foldername = "Cyber Security";  
+  if (foldername == "CPP") foldername = "C++";
+  document.getElementById("coursetopic").innerText = foldername;
+}
+getCourseFolder();
+
+Get certified
+
+
+
+
+.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}w3schools CERTIFIED  .  2022
+
+
+❮ Home
+Next ❯

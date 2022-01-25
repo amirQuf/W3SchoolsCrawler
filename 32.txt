@@ -1,0 +1,325 @@
+HTML Table Headers
+
+❮ Previous
+Next ❯
+
+
+HTML tables can have headers for each column or row, or for many columns/rows.
+
+
+
+
+EMIL
+TOBIAS
+LINUS
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+8:00
+ 
+ 
+
+
+9:00
+ 
+ 
+
+
+10:00
+ 
+ 
+
+
+11:00
+ 
+ 
+
+
+12:00
+ 
+ 
+
+
+13:00
+ 
+ 
+
+
+
+
+
+MON
+TUE
+WED
+THU
+FRI
+
+
+8:00
+ 
+ 
+ 
+ 
+ 
+
+
+9:00
+ 
+ 
+ 
+ 
+ 
+
+
+10:00
+ 
+ 
+ 
+ 
+ 
+
+
+11:00
+ 
+ 
+ 
+ 
+ 
+
+
+12:00
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+DECEMBER
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+HTML Table Headers
+Table headers are defined with th elements,
+each th element represents a table cell.
+
+Example
+
+  <table>  <tr>    <th>Firstname</th>    
+  <th>Lastname</th>    <th>Age</th>  </tr>  
+  <tr>    <td>Jill</td>    <td>Smith</td>    
+  <td>50</td>  </tr>  <tr>    <td>Eve</td>    
+  <td>Jackson</td>    <td>94</td>  </tr></table>
+Try it Yourself »
+
+
+Vertical Table Headers
+To use the first column as table headers, define the first cell in each row as a th element:
+
+Example
+
+  <table>  <tr>    <th>Firstname</th>    
+  <td>Jill</td>    <td>Eve</td>  </tr>  
+  <tr>    
+  <th>Lastname</th>    <td>Smith</td>    
+  <td>Jackson</td>  </tr>  <tr>    <th>Age</th>    <td>94</td>    
+  <td>50</td>  </tr></table>
+Try it Yourself »
+
+
+
+
+
+
+
+
+Align Table Headers
+By default, table headers are bold and centered:
+
+
+Firstname
+Lastname
+Age
+
+
+Jill
+Smith
+50
+
+
+Eve
+Jackson
+94
+
+
+To left-align the table headers, use the CSS text-align property:
+
+Example
+
+th {  text-align: left;
+}
+
+Try it Yourself »
+
+
+Header for Multiple Columns
+You can have a header that spans over two or more columns.
+
+
+Name
+Age
+
+
+Jill
+Smith
+50
+
+
+Eve
+Jackson
+94
+
+
+To do this, use the colspan attribute on the 
+<th> element:
+
+Example
+
+  <table>  <tr>    <th colspan="2">Name</th>    <th>Age</th>  </tr>  
+  <tr>    <td>Jill</td>    <td>Smith</td>    
+  <td>50</td>  </tr>  <tr>    <td>Eve</td>    
+  <td>Jackson</td>    <td>94</td>  </tr></table>
+Try it Yourself »
+
+
+You will learn more about colspan and rowspan in the Table colspan & rowspan chapter.
+
+
+Table Caption
+You can add a caption that serves as a heading for the entire table.
+
+Monthly savings
+
+Month
+Savings
+
+
+January
+$100
+
+
+February
+$50
+
+
+To add a caption to a table, use the <caption> tag:
+
+Example
+
+ <table style="width:100%">  <caption>Monthly savings</caption>  <tr>    <th>Month</th>    <th>Savings</th>  </tr>  <tr>    <td>January</td>    <td>$100</td>  </tr>  <tr>    <td>February</td>    <td>$50</td>  </tr>
+ </table>
+Try it Yourself »
+
+
+Note: The <caption> tag 
+should be inserted immediately after the <table> tag.
+
+
+HTML Exercises
+
+Test Yourself With Exercises
+
+Exercise:
+Add a table caption that says "Names".
+
+
+<table>
+
+  
+
+  <tr>
+
+    <th>First Name</th>
+
+    <th>Last Name</th>
+
+    <th>Points</th>
+
+  </tr>
+
+  <tr>
+
+    <td>Jill</td>
+
+    <td>Smith</td>
+
+    <td>50</td>
+
+  </tr>
+
+</table>
+
+
+Submit Answer »
+Start the Exercise
+
+
+
+
+
+❮ Previous
+Next ❯
